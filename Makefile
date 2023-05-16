@@ -31,8 +31,7 @@ else
 endif
 
 resources:
-	@chmod +x ./scripts/resources.sh
-	@./scripts/resources.sh examples/decks/tour.deck
+	@sh scripts/resources.sh examples/decks/tour.deck
 
 lilt: resources
 	@mkdir -p c/build
